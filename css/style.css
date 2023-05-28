@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding-top: 20px;
+}
+
+input[type="text"] {
+    outline: none;
+}
+
+section {
+    background-size: cover;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.header__right {
+    text-align: right;
+}
+
+.header__right--link {
+    margin-right: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 35px 0 50px 0;
+}
+
+h1 {
+    color: #0a2f69;
+    margin-top: 25px;
+}
+
+.product {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.product__text {
+    color: black;
+    font-size: 12px;
+}
+
+.wrap {
+    border: 1px solid #eee;
+    border-radius: 0 0 5px 5px;
+    padding: 16px 16px;
+    height: 200px;
+}
+
+.wrap:hover {
+    border: 1px solid rgb(94, 92, 92);
+}
+
+.product__content {
+    margin-bottom: 30px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+ }
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #c4d3f0;
+    z-index: 1;
+    list-style: none;
+    text-align: left;
+ }
+
+.dropdown-item:hover {
+    background-color: #c4d3f0;
+    color: blue;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+ }
+
+footer {
+     background-color: #0a2f69;
+     color: white;
+     padding: 20px;
+     text-align: center;
+}
+
+.footer__detail--link {
+    color: white;
+}
+
+.short__info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px 20px;
+    box-shadow: 0 10px 20px rgb(75, 155, 192);
+    border-left: blue;
+    border-radius: 1rem;
+    background-color: rgb(125, 191, 235);
+}
+
+.footer__info {
+    margin: 30px 0;
+}
+
+/* Slideshow */
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 20px 20px;
+  }
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 20px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(230, 219, 219, 0.8);
+  }
+  
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
+
+.content {
+    padding: 20px 20px;
+}
+  
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.left-line-title {
+    display: block;
+    color: #0c3980;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.check__item {
+    color: #0c3980;
+    display: flex;
+    padding: 15px;
+}
+
+.icon {
+    margin: 10px;
+}
+
+.footer__info--icon {
+    margin-right: 10px;
+}
+
+.footer__info--icon:hover {
+    font-size: 30px;
+}
+
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px){
+    footer {
+        text-align: center;
+    }
+    .product__content--info {
+        margin-bottom: 25px;
+    }
+    .header__right--link {
+        margin-right: 100px;
+    }
+    .dropdown {
+        margin-right: 85px;
+    }
+    .header__right {
+        text-align: center;
+    }
+    .content__photo {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* mobile */
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+    .product__content--info {
+        margin-bottom: 25px;
+    }
+    .header__right--link {
+        margin-right: 10px;
+    }
+    .dropdown {
+        margin-right: 0px;
+    }
+    .header__right {
+        text-align: center;
+    }
+}
+
+
+
+
+
